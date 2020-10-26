@@ -1,20 +1,22 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, Button, StyleSheet } from "react-native";
 
-export default class HomeScreen extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Home Screen</Text>
-      </View>
-    );
-  }
-}
+export const HomeScreen = ({ navigation }) => {
+  return (
+    <View style={styles.container}>
+      <Text>Hello</Text>
+      <Button
+        title="Veja os Detalhes"
+        onPress={() => navigation.navigate("Detalhes")}
+      />
+    </View>
+  );
+};
 
-const styles = {
+const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    justifyContent: "center"
   }
-};
+});

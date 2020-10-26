@@ -13,7 +13,7 @@ export function LoginScreen({ navigation }) {
 
   const [loading, setLoading] = useState("");
   const [state, setState] = useState("");
-
+  /*
   function onButtonPress() {
     firebase
       .auth()
@@ -25,7 +25,7 @@ export function LoginScreen({ navigation }) {
       erro: "",
       loading: false
     });
-  }
+  }*/
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>LOGIN</Text>
